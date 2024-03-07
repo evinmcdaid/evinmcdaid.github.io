@@ -10,7 +10,15 @@ img { width: 100%; height: auto; display: block }
 input, button, textarea, select { font: inherit }
 
 body { background-color:  lightblue;}
-section { padding: 4% 20% }
+/* Desktops */
+@media (min-width: 768px) {
+    section { padding: 4% 20% }
+ }
+ 
+ /* Mobiles */
+ @media (max-width: 767px) {
+    section { padding: 5% 5% }
+ }
 
 
 /* ================= ENDS ================ */
