@@ -9,8 +9,10 @@ body { line-height: 1.5; min-height: 100vh }
 img { width: 100%; height: auto; display: block }
 input, button, textarea, select { font: inherit }
 
-/* ====== PADDING AROUND WEB PAGE BODY CONTENT ======  */
-body { padding: 4% 20% }
+body { 
+    padding: 4% 20%;
+    background-color: antiquewhite;
+}
 
 /* ================= ENDS ================ */
 
@@ -20,16 +22,19 @@ h1 {
     font-weight: normal;
     letter-spacing: -2px;
     margin-bottom: 32px;
+    color: brown;
 }
 
 h2 {
     font-size: 36px;
     margin-bottom: 4px;
+    color: brown;
 }
 
 h3 {
     font-size: 24px;
     margin-bottom: 4px;
+    color: brown;
 }
 
 p {
@@ -37,4 +42,8 @@ p {
     font-family: sans-serif;
     line-height: 1.6;
     margin-bottom: 20px;
+}
+
+a {
+    color: brown;
 }

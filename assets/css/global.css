@@ -10,7 +10,10 @@ img { width: 100%; height: auto; display: block }
 input, button, textarea, select { font: inherit }
 
 /* ====== PADDING AROUND WEB PAGE BODY CONTENT ======  */
-body { padding: 4% 20% }
+body { 
+    padding: 4% 20%;
+    background-color: lightgreen;
+}
 
 
 /* ================= ENDS ================ */
@@ -47,4 +50,6 @@ p {
     font-size: 20px;
     margin-bottom: 16px;
 }
+
+a {color: darkgreen}
 
