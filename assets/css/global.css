@@ -21,7 +21,7 @@ input, button, textarea, select { font: inherit }
  }
 
 body { 
-    background-color: lightgreen;
+    background-color: rgb(127, 163, 218);
 }
 
 
@@ -60,7 +60,7 @@ p {
     margin-bottom: 16px;
 }
 
-a {color: darkgreen}
+a {color: rgb(82, 16, 47)}
 
 /* Classes */
 
