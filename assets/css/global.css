@@ -62,3 +62,10 @@ p {
 
 a {color: darkgreen}
 
+/* Classes */
+
+.front-hero {
+    border-radius: 20px;
+    margin-bottom: 32px;
+}
+
