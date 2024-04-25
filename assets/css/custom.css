@@ -23,7 +23,7 @@ section.theme-dark h3 a:not(.btn):hover, section.theme-dark h3 a:not(.btn):activ
 section.theme-dark.section-selector-1 h2 { color: #121629 }
 section.theme-dark.section-selector-1 h3 { color: #121629 }
 section.theme-dark.section-selector-1 p { color: #121629 }
-.theme-dark a.btn-solid, .theme-dark a.btn-solid:visited, .theme-dark a.btn-solid:focus {
+.theme-dark a.btn-solid, .theme-dark a.btn-solid:link, .theme-dark a.btn-solid:visited, .theme-dark a.btn-solid:focus {
     background-color: #eebbc3;
     color: #55423d;
     border-color: #eebbc3;
