@@ -1,5 +1,7 @@
 body { font-family: 'Nunito Sans', sans-serif; }
 
+/* Nav Styles */
+
 nav.theme-dark, nav.theme-dark ul.links-wrapper.active { background-color: #55423d }
 nav.theme-dark ul.links-wrapper li a:link, nav.theme-dark ul.links-wrapper li a:visited { color:#fffffe}
 nav.theme-dark ul.links-wrapper li a:hover { color:#eebbc3}
@@ -10,12 +12,18 @@ nav.theme-dark ul.links-wrapper li a.btn-solid:focus, nav.theme-dark ul.links-wr
     border-color: #eebbc3;
 }
 
+/* Header Styles */
+
 header.theme-dark   { background-color: #55423d }
 
 header.theme-dark  h1 { color: #fffffe }
 .header-logo {
     margin-top: 3em;
 }
+
+header .col-text h2, .col-1 > h3 { line-height: 1.8 }
+
+/* Section Styles */
 
 section.theme-dark { background-color: #fff3ec }
 section.theme-dark h3 a:not(.btn):link, section.theme-dark h3 a:not(.btn):visited { color: purple }
@@ -25,14 +33,18 @@ section.theme-dark.section-selector-1 h3 { color: #121629 }
 section.theme-dark.section-selector-1 p { color: #121629 }
 .theme-dark a.btn-solid, .theme-dark a.btn-solid:link, .theme-dark a.btn-solid:visited, .theme-dark a.btn-solid:focus {
     background-color: #eebbc3;
+    overflow: hidden;
     color: #55423d;
     border-color: #eebbc3;
+    border: 0;
 }
-.theme-dark a.btn-solid:hover{
+/* .theme-dark a.btn-solid:hover{
     background-color: #fffffe;
     color: #55423d;
     border-color: #fffffe;
-}
+} */
+
+/* Footer Styles */
 
 footer.theme-dark   { background-color: #55423d }
 footer.theme-dark ul.footer-links li a:link, 
@@ -59,7 +71,61 @@ footer.theme-dark ul.footer-links li a:hover { color: #fffffe; text-decoration-c
 
 
 
-header .col-text h2, .col-1 > h3 { line-height: 1.8 }
+/* Animations */
+
+.slide-fade-in-left {
+    position: relative;
+    animation: slideFadeFromLeft 1.2s ease forwards;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 2.2s ease forwards;
+}
+
+@keyframes slideFadeFromLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100%); /* Start position */
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0); /* End position */
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.gradient-overlay {
+    position: absolute;
+    top: 0;
+    right: -30%;
+    width: 170%;
+    height: 100%;
+    border-radius: inherit;
+    background: linear-gradient(to right, white, #eebbc3); /* Gradient from white to pink */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.5s ease; /* Smooth transition */
+  }
+
+.hover-gradient:hover .gradient-overlay {
+    opacity: 1;
+}
+
+.above-overlay {
+    position: relative;
+    z-index: 1;
+}
+
+
+
 
 
 
